@@ -8,11 +8,38 @@
 .header {}
 
 .main_content {}
-/* hint! */
+
+.header:after { 
+	content: "";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.logo {
+	float: left;
+}
+
+.navigation {
+	float: right;
+	width: 90%;	
+}
 
 .post {}
-/* hint! */
 
-.image {}
+.post:after { 
+	content: "";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.image {
+	float: left;
+}
 
-.post_excerpt {}
+.post_excerpt {
+	float: left;
+	width:80%;
+}

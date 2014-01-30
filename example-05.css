@@ -12,22 +12,48 @@
 
 
 .header {}
-/* hint! what do you have to add here? */
 
-.logo {}
+.header:after { 
+	content: "";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
 
-.navigation {}
+.logo {
+	float: left;
+}
 
-.sidebar {}
+.navigation {
+	float: right;
+	width: 840px;	
+}
 
-.main_content {}
-/* hint! you have to contain the floated children elements. */
+.sidebar {
+	float: left;
+	height: 300px;
+	width: 250px;
+}
+
+.main_content {
+	float: left;
+	height: 340px;
+	width: 100%;
+}
 
 .sub_content {
-	/* hint! */
+	float: right;
+	height: 150px;
+	width: 670px;
 }
 .sub_content_2 {
-	/* hint! */
+	float: right;
+	clear: right;
+	height: 150px;
+	width: 670px;
 }
 
-.footer {}
+.footer {
+	clear: both;
+}
